@@ -11,7 +11,7 @@ import com.mycompany.enadeitalo2021.model.Resultado;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
 import javax.faces.event.ActionEvent;
 
 
@@ -24,7 +24,7 @@ import javax.faces.event.ActionEvent;
 @ManagedBean()
 @ViewScoped
 
-public class ResultadoController {
+public class ResultadoController implements Serializable{
     
     Resultado resultado = new Resultado();
     List<Resultado> resultados = new ArrayList<Resultado>();
