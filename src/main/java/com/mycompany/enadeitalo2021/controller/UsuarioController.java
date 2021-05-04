@@ -8,10 +8,11 @@ package com.mycompany.enadeitalo2021.controller;
 
 import com.mycompany.enadeitalo2021.dao.UsuarioDAO;
 import com.mycompany.enadeitalo2021.model.Usuario;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
 import javax.faces.event.ActionEvent;
 
 
@@ -24,7 +25,7 @@ import javax.faces.event.ActionEvent;
 @ManagedBean()
 @ViewScoped
 
-public class UsuarioController {
+public class UsuarioController implements Serializable{
     
     Usuario usuario = new Usuario();
     List<Usuario> usuarios = new ArrayList<Usuario>();
