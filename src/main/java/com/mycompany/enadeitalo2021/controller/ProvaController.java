@@ -11,7 +11,7 @@ import com.mycompany.enadeitalo2021.model.Prova;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
 import javax.faces.event.ActionEvent;
 
 
@@ -24,7 +24,7 @@ import javax.faces.event.ActionEvent;
 @ManagedBean()
 @ViewScoped
 
-public class ProvaController {
+public class ProvaController implements Serializable{
     
     Prova prova = new Prova();
     List<Prova> provas = new ArrayList<Prova>();
