@@ -8,10 +8,11 @@ package com.mycompany.enadeitalo2021.controller;
 
 import com.mycompany.enadeitalo2021.dao.TipoquestaoDAO;
 import com.mycompany.enadeitalo2021.model.Tipoquestao;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
 import javax.faces.event.ActionEvent;
 
 
@@ -24,7 +25,7 @@ import javax.faces.event.ActionEvent;
 @ManagedBean()
 @ViewScoped
 
-public class TipoquestaoController {
+public class TipoquestaoController implements Serializable{
     
     Tipoquestao tipoQuestao = new Tipoquestao();
     List<Tipoquestao> tipoQuestoes = new ArrayList<Tipoquestao>();
