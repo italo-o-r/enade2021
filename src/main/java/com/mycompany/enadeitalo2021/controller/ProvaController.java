@@ -8,6 +8,7 @@ package com.mycompany.enadeitalo2021.controller;
 
 import com.mycompany.enadeitalo2021.dao.ProvaDAO;
 import com.mycompany.enadeitalo2021.model.Prova;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.ManagedBean;
